@@ -27,6 +27,12 @@
   justify-content: space-between;
 }
 
+.logoMenuWrapper {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+}
+
 .logo {
   /* 폰트 진하게 */
   font-weight: bold;
@@ -35,15 +41,38 @@
   /* 해당 컨텐츠에 마우스 hover시 커서 모양 변경 */
   cursor: pointer;
 }
+.topLogo {
+  flex-grow: 1 0;
+}
 
-.topRight {
+.topIcon {
   /* topbarIconContainer와 topIconBadge를 flex를 사용하여 raw 출력 되고 컨텐츠 중앙 정렬  */
   display: flex;
   align-items: center;
+  /* flex-grow: 1; */
 }
 
 .topMenus {
-  width: 30%;
+  width: 700px;
+  position: relative;
+}
+
+.topMenulist > li ul.subMenu {
+  display: none;
+  position: absolute;
+
+  /* width: 300px;
+  height: 300px; */
+  background-color: bisque;
+  top: 60px;
+}
+
+.topMenulist > li:hover ul.subMenu {
+  display: inline-block;
+}
+
+.subMenu {
+  list-style: none;
 }
 
 .topMenulist {
@@ -66,4 +95,12 @@
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.subMenuActive {
+  border: 1px solid black;
+  display: blcok;
+  height: 300px;
+  padding-left: 100%;
+  margin: auto;
 }
