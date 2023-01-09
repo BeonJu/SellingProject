@@ -1,32 +1,32 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import Pagenation from './Pagenation';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
+import Pagenation from "./Pagenation";
 
 const prods = [
   {
-    name: 'cloth1',
-    price: '3000won',
+    name: "cloth1",
+    price: "3000won",
   },
   {
-    name: 'cloth2',
-    price: '3000won',
+    name: "cloth2",
+    price: "3000won",
   },
   {
-    name: 'cloth3',
-    price: '3000won',
+    name: "cloth3",
+    price: "3000won",
   },
   {
-    name: 'cloth4',
-    price: '3000won',
+    name: "cloth4",
+    price: "3000won",
   },
   {
-    name: 'cloth5',
-    price: '3000won',
+    name: "cloth5",
+    price: "3000won",
   },
 ];
 // const card = (
@@ -55,7 +55,7 @@ const cards = (name, price) => {
     <CardActionArea>
       <CardMedia
         sx={{ height: 250, width: 1 }}
-        image={require('../../image/940x1253.png')}
+        image={"images/940x1253.png"}
         title="green iguana"
       />
       <CardContent>
@@ -73,22 +73,22 @@ const cards = (name, price) => {
 export default function OutlinedCard() {
   return (
     <>
-      <Box sx={{ width: '80%', margin: '0 auto' }}>
+      <Box sx={{ width: "80%", margin: "0 auto" }}>
         <h2>상품리스트</h2>
       </Box>
       <Box
         sx={{
-          width: '80%',
-          display: 'flex',
-          margin: '0 auto',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          justifyContent: 'space-around',
+          width: "80%",
+          display: "flex",
+          margin: "0 auto",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
         }}
       >
         {prods.map((p) => (
           <Card
-            sx={{ width: 1 / 5, boxSizing: 'border-box' }}
+            sx={{ width: 1 / 5, boxSizing: "border-box" }}
             variant="outlined"
           >
             {cards(p.name, p.price)}

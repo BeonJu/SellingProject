@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css';
+import '../stylesheets/footer.css';
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-level01 font-Pret">
           <div className="logo">
             <h2>
-              <img src={require('../../image/LogoResizing.png')} alt="logo" />
+              <img src={'images/LogoResizing.png'} alt="logo" />
             </h2>
           </div>
           <div className="footerDepth">
