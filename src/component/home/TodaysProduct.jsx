@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import 'swiper/scss';
 import 'swiper/scss/pagination';
-import './ProdPreview.scss';
+import '../../stylesheets/home/TodaysProduct.scss';
 
 function TodaysProduct({ product }) {
   const { id, name, price, images } = product;
