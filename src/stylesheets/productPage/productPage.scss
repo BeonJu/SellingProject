@@ -1,0 +1,32 @@
+.product-page {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 140px;
+
+  .body {
+    .product-desc {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 40px 32px;
+      margin: 20px 0;
+
+      &__list {
+        list-style: circle;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body {
+
+    .long-images {
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+      }
+    }
+  }
+}
