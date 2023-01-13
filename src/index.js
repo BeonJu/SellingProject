@@ -4,12 +4,17 @@ import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import MyPage from './page/MyPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
   },
+  {
+    path: '/MyPage',
+    element: <MyPage/>,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
