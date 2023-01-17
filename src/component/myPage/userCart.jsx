@@ -93,6 +93,7 @@ const UserCart = () => {
         alert('test');
     }
     const isSelected = (num) => selected.indexOf(num) !== -1;
+
     const totalPrice = (row) => {
         let price = 0;
         row.map((n) => {

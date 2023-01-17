@@ -7,11 +7,11 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Topbar />
+      <Topbar></Topbar>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home />}/>
       </Routes>
-      <Footer />
+      <Footer></Footer>
     </div>
   );
 }
