@@ -56,6 +56,7 @@
   /* topbarIconContainer와 topIconBadge를 flex를 사용하여 raw 출력 되고 컨텐츠 중앙 정렬  */
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   /* flex-grow: 1; */
 }
 
@@ -92,8 +93,8 @@
 
 /* 메인 메뉴 li, onMouseEnter를 위하여 div 크기 조절 */
 .depth1 {
-  height: 100px;
-  line-height: 100px;
+  height: 112px;
+  line-height: 112px;
   width: 70px;
 }
 
@@ -107,9 +108,10 @@
   padding-right: 100%;
   width: 100%;
   height: 100px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255);
   position: fixed;
   left: 0px;
+  top: 100px;
   text-align: left;
 }
 

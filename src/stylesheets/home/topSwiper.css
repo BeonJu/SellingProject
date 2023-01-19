@@ -1,6 +1,6 @@
 .swiper-slide {
-  height: 500px;
-  line-height: 500px;
+  height: 300px;
+  line-height: 300px;
   background-color: bisque;
   margin-top: 101px;
 }
@@ -10,4 +10,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.topSwiper {
+  height: 700px;
 }

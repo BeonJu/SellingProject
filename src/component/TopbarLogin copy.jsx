@@ -3,7 +3,6 @@ import '../stylesheets/topbar.css';
 // import $ from 'jquery';
 import { useState } from 'react';
 
-import Login_button from './home/LoginButton';
 import SignUp_button from './home/SignUpButton';
 
 // yarn add @mui/icons-material  amterial-ui of icon 을 쓰기 위하여 추가 설치
@@ -83,13 +82,15 @@ function TopbarLogin() {
 
         <div className="topIcon">
           {/* 종 모양 알람 */}
+
           {/* 지구본 모양 언어설정 */}
           <div className="topbarIconContainer">
-            <Login_button></Login_button>
-          </div>
-          <span>&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <div className="topbarIconContainer">
+            {/* <span className="topIconBadge">Sign in</span> */}
             <SignUp_button></SignUp_button>
+          </div>
+          {/* 톱니바퀴 모양 설정(Setting) */}
+          <div className="topbarIconContainer">
+            <span className="topIconBadge">Sign Up</span>
           </div>
         </div>
       </div>

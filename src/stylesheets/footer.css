@@ -6,6 +6,7 @@ a {
   height: 400px;
   width: 100%;
   background-color: #fff;
+  margin-top: 100px;
 }
 .footer > .footer-level01 {
   height: 100%;
@@ -48,4 +49,14 @@ a {
 .footerDepth {
   /* padding-top: px; */
   padding-bottom: 30px;
+}
+
+.logo {
+  /* 폰트 진하게 */
+  font-weight: bold;
+  font-size: 30px;
+  color: #555;
+  /* 해당 컨텐츠에 마우스 hover시 커서 모양 변경 */
+  cursor: pointer;
+  text-align: center;
 }
